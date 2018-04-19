@@ -1,0 +1,13 @@
+C:\Users\Mukesh-PC\Desktop\IOT
+--output-path=obj\iotBoard\netcoreapp2.0\
+--application-name=IOT
+--content-root=C:\Users\Mukesh-PC\Desktop\IOT
+--file=C:\Users\Mukesh-PC\Desktop\IOT\Views\Action\Index.cshtml
+--file=C:\Users\Mukesh-PC\Desktop\IOT\Views\Home\Index.cshtml
+--file=C:\Users\Mukesh-PC\Desktop\IOT\Views\Shared\Error.cshtml
+--file=C:\Users\Mukesh-PC\Desktop\IOT\Views\Shared\_Layout.cshtml
+--file=C:\Users\Mukesh-PC\Desktop\IOT\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Users\Mukesh-PC\Desktop\IOT\Views\Telemetry\Graph.cshtml
+--file=C:\Users\Mukesh-PC\Desktop\IOT\Views\Telemetry\History.cshtml
+--file=C:\Users\Mukesh-PC\Desktop\IOT\Views\_ViewImports.cshtml
+--file=C:\Users\Mukesh-PC\Desktop\IOT\Views\_ViewStart.cshtml

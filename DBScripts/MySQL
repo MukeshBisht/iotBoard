@@ -1,0 +1,65 @@
+#Create Database
+CREATE DATABASE `iotboard` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+#Select Database
+use iotboard;
+
+#Create Actions Table
+CREATE TABLE `action` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `text` varchar(1000) DEFAULT NULL,
+  `action` int(11) DEFAULT '0',
+  `timestamp` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=utf8;
+
+
+#Create weather forecast Table
+CREATE TABLE `forecast` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `main` varchar(100) DEFAULT NULL,
+  `description` varchar(150) DEFAULT NULL,
+  `icon` varchar(45) DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
+  `place` varchar(45) DEFAULT NULL,
+  `clouds` double DEFAULT NULL,
+  `temp` double DEFAULT NULL,
+  `minTemp` double DEFAULT NULL,
+  `maxTemp` double DEFAULT NULL,
+  `windSpeed` double DEFAULT NULL,
+  `timeStamp` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1556 DEFAULT CHARSET=utf8;
+
+
+#Create sensor data table
+CREATE TABLE `sensordata` (
+  `DataID` int(11) NOT NULL AUTO_INCREMENT,
+  `Pressure` double DEFAULT '0',
+  `Temperature` double DEFAULT '0',
+  `Humidity` double DEFAULT '0',
+  `Light` double DEFAULT '0',
+  `SoilMoisture` double DEFAULT '0',
+  `Altitude` double DEFAULT '0',
+  `TimeStamp` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`DataID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4923 DEFAULT CHARSET=utf8;
+
+
+#Create current weather table
+CREATE TABLE `weather` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `main` varchar(100) DEFAULT NULL,
+  `description` varchar(150) DEFAULT NULL,
+  `icon` varchar(45) DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
+  `place` varchar(45) DEFAULT NULL,
+  `clouds` double DEFAULT NULL,
+  `temp` double DEFAULT NULL,
+  `minTemp` double DEFAULT NULL,
+  `maxTemp` double DEFAULT NULL,
+  `windSpeed` double DEFAULT NULL,
+  `timeStamp` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8;
+

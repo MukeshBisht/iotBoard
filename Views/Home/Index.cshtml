@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+
+    <script type="text/javascript" src="~/js/weather.js"></script>
+
+    <div class="kt-breadcrumb">
+      <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="/Home">home</a>
+        <span class="breadcrumb-item active">Dashboard</span>
+      </nav>
+    </div> <!-- kt-breadcrumb -->
+
+    <!-- ##### MAIN PANEL ##### -->
+    <div class="kt-mainpanel">
+      <div class="kt-pagetitle">
+        <h5>Dashboard</h5>
+      </div><!-- kt-pagetitle -->
+
+      <div class="kt-pagebody">
+
+        <div class="row row-sm">
+          <div class="col-lg-12">
+            <div class="row row-sm">
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body pd-b-0">
+                    <img src="~/images/senc.svg" width="60" class="card-icon" />
+                    <h6 class="card-body-title tx-12 tx-spacing-2 mg-b-20">sensors</h6>
+                    <h2 class="tx-roboto tx-inverse">6 <small>Sensors</small></h2>
+                    <p class="tx-12"><span class="tx-success">99%</span> stability</p>
+                  </div><!-- card-body -->
+                  <div id="rs1" class="ht-50 ht-sm-70 mg-r--1"></div>
+                </div><!-- card -->
+              </div><!-- col-6 -->
+              
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body pd-b-0">
+                    <img id="wimg" src="~/images/energy.svg" width="60" class="card-icon" />
+                    <h6 id="c_name" class="card-body-title tx-12 tx-spacing-2 mg-b-20">City</h6>
+                    <h2 id="temp" class="tx-roboto tx-inverse">14 &#8451;</h2>
+                    <p id ="details" class="tx-12">Clear | clear sky</p>
+                  </div><!-- card-body -->
+                  <div id="rs2" class="ht-50 ht-sm-70 mg-r--1">
+                    <div style="margin-left:20px">
+                      <h5 id="wind">Wind : 1.11 mpH</h5>
+                      <h5 id="clouds">Clouds : 0%</h5>
+                    </div>
+                  </div>
+                </div><!-- card -->
+              </div><!-- col-6 -->
+            </div><!-- row -->
+
+            <div class="row row-sm">
+              <div class="col-lg-6">
+                <div class="card mg-t-20">
+                  <div class="card-body pd-b-0 ">
+                    <img src="~/images/senc.svg" width="60" class="card-icon" />
+                    <h6 class="card-body-title tx-12 tx-spacing-2 mg-b-20">Devices Connection</h6>
+                    <h2 class="tx-lato tx-inverse">100 <small>%</small></h2>
+                    <p class="tx-12"><span class="tx-success">Everything is Connected</p>
+                  </div><!-- card-body -->
+                  <div id="rs3" class="ht-50 ht-sm-70 mg-r--1"></div>
+                </div><!-- card -->
+              </div><!-- col-6 -->
+              
+              <div class="col-lg-6 mg-t-20">
+                <div class="card">
+                  <div class="card-body pd-b-0">
+                    <img src="~/images/rain.svg" width="60" class="card-icon" />
+                    <h6 class="card-body-title tx-12 tx-spacing-2 mg-b-20">Rains</h6>
+                    <h2 class="tx-roboto tx-inverse">0 <small>Litter</small></h2>
+                    <p class="tx-12"><span class="tx-success">0%</span> change from yesterday</p>
+                  </div><!-- card-body -->
+                  <div id="rs4" class="ht-50 ht-sm-70 mg-r--1"></div>
+                </div><!-- card -->
+              </div><!-- col-6 -->
+            </div><!-- row -->
+
+            <div class="row row-sm">                          
+              <div class="col-lg-12 mg-t-20">
+                <h5>Weather Forecast</h5> 
+                <div class="card">
+                  <table id="forecastTable" class="table table-striped">
+                    <thead>
+                    <tr>
+                      <th>Time</th>
+                      <th>Weather</th>
+                      <th>Description</th>
+                      <th>Temperature</th>
+                      <th>Min</th>
+                      <th>Max</th>
+                      <th>icon</th>
+                      <th>Clouds</th>
+                      <th>WindSpeed</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+                </div><!-- card -->
+              </div><!-- col-6 -->
+            </div><!-- row -->
+
+          </div><!-- col-8 -->
+        </div><!-- row -->
+
+      </div><!-- kt-pagebody -->
+      
+    </div><!-- kt-mainpanel -->

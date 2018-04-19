@@ -1,0 +1,14 @@
+POST http://localhost:5000/api/Action/4 HTTP/1.1
+
+
+POST http://localhost:5000/api/Telemetry HTTP/1.1
+content-type: application/json
+
+{
+    "Humidity": 30,
+    "Temperature": 25,
+    "Pressure" :92982,
+    "Light": 660,
+    "SoilMoisture": 710,
+    "Altitude": 123
+}

@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Real-Time";
+}
+
+
+
+    <div class="kt-breadcrumb">
+      <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="/Home">home</a>
+        <span class="breadcrumb-item active">Telemetry</span>
+      </nav>
+    </div> <!-- kt-breadcrumb -->
+
+    <!-- ##### MAIN PANEL ##### -->
+    <div class="kt-mainpanel">
+      <div class="kt-pagetitle">
+        <h5>Hisotrical Data</h5>
+      </div><!-- kt-pagetitle -->
+
+         <div class="kt-pagebody">
+
+        Date:
+         <input type="text" name="date1" id='date1'>
+        
+          <div id="env" width="1000" height="250"></div>
+
+         </div>
+
+    <script type="text/javascript" src="~/js/jquery-ui.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script type="text/javascript" src="~/js/morris.js"></script>        
+    <script type="text/javascript" src="~/js/history.js"></script>

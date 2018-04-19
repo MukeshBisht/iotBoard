@@ -1,0 +1,10 @@
+C:\Users\Mukesh-PC\Desktop\IOT\bin\iotBoard\netcoreapp2.0\IOT.deps.json
+C:\Users\Mukesh-PC\Desktop\IOT\bin\iotBoard\netcoreapp2.0\IOT.runtimeconfig.json
+C:\Users\Mukesh-PC\Desktop\IOT\bin\iotBoard\netcoreapp2.0\IOT.runtimeconfig.dev.json
+C:\Users\Mukesh-PC\Desktop\IOT\bin\iotBoard\netcoreapp2.0\IOT.dll
+C:\Users\Mukesh-PC\Desktop\IOT\bin\iotBoard\netcoreapp2.0\IOT.pdb
+C:\Users\Mukesh-PC\Desktop\IOT\obj\iotBoard\netcoreapp2.0\IOT.csproj.CoreCompileInputs.cache
+C:\Users\Mukesh-PC\Desktop\IOT\obj\iotBoard\netcoreapp2.0\IOT.AssemblyInfoInputs.cache
+C:\Users\Mukesh-PC\Desktop\IOT\obj\iotBoard\netcoreapp2.0\IOT.AssemblyInfo.cs
+C:\Users\Mukesh-PC\Desktop\IOT\obj\iotBoard\netcoreapp2.0\IOT.dll
+C:\Users\Mukesh-PC\Desktop\IOT\obj\iotBoard\netcoreapp2.0\IOT.pdb

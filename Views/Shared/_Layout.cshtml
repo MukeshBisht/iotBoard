@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IOT</title>
+
+    <!-- vendor css -->
+    <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/lib/Ionicons/css/ionicons.css" rel="stylesheet" />
+    <link href="~/lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/d3.min.js"></script>
+
+    <!-- magen-iot-admin CSS -->
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+
+  <body>
+    <!-- ##### SIDEBAR LOGO ##### -->
+    <div class="kt-sideleft-header">
+      <div class="kt-logo"><a href="#">IOT <small>Administrator</small></a></div>
+      <div id="ktDate" class="kt-date-today">
+      </div>
+    </div>
+    <!-- kt-sideleft-header -->
+
+    <!-- ##### SIDEBAR MENU ##### -->
+    <div class="kt-sideleft">
+      <label class="kt-sidebar-label">Navigation</label>
+      <ul class="nav kt-sideleft-menu">
+        <li class="nav-item">
+          <a href="/Home" class="nav-link">
+            <i class="icon ion-ios-home-outline"></i>
+            <span>Dashboard</span>
+          </a>
+        </li><!-- nav-item -->
+ 
+        <li class="nav-item">
+          <a href="/Telemetry" class="nav-link">
+            <i class="icon ion-ios-analytics-outline"></i>
+            <span>Telemetry</span>
+          </a>
+        </li><!-- nav-item -->
+        <li class="nav-item">
+          <a href="/Telemetry/History" class="nav-link">
+            <i class="icon ion-ios-analytics-outline"></i>
+            <span>History</span>
+          </a>
+        </li><!-- nav-item -->
+        <li class="nav-item">
+          <a href="/Action" class="nav-link">
+            <i class="icon ion-ios-gear-outline"></i>
+            <span>Administration</span>
+          </a>
+        </li><!-- nav-item -->
+      </ul>
+    </div><!-- kt-sideleft -->
+
+    <!-- ##### HEAD PANEL ##### -->
+    <div class="kt-headpanel">
+      <div class="kt-headpanel-left">
+        <a id="naviconMenu" href="#" class="kt-navicon d-none d-lg-flex"><img src="~/images/menu.svg" width="30" /></a>
+        <a id="naviconMenuMobile" href="#" class="kt-navicon d-lg-none"><i class="icon ion-navicon-round"></i></a>
+      </div><!-- kt-headpanel-left -->
+    </div>
+    
+    @RenderBody()
+ 
+    <script src="~/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="~/lib/moment/moment.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js"></script>
+  </body>
+</html>

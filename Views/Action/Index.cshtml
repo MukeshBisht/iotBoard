@@ -1,0 +1,56 @@
+@model IEnumerable<IOT.Models.Action>
+@{
+    ViewData["Title"] = "Analytics";
+}
+
+    <div class="kt-breadcrumb">
+      <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="/Home">home</a>
+        <span class="breadcrumb-item active">Action</span>
+      </nav>
+    </div> <!-- kt-breadcrumb -->
+
+    <!-- ##### MAIN PANEL ##### -->
+    <div class="kt-mainpanel">
+      <div class="kt-pagetitle">
+        <h5>Analytics</h5>
+      </div><!-- kt-pagetitle -->
+
+         <div class="kt-pagebody">
+
+  <div class="alert alert-success">
+    <strong>Air Simulation!</strong> This will turn on the Fan for Air Simulation.
+    <div class="pull-right">
+      <button type="button" class="btn btn-primary btn-sm"  onclick="addTask(1)">Fan ON</button>
+      <button type="button" class="btn btn-warning btn-sm"  onclick="addTask(2)">Fan OFF</button>
+    </div>
+  </div>
+
+    @foreach (var item in Model) {   
+      var cls="alert alert-";
+      if (item.Act == 0){
+        cls +="info";
+      }
+      if (item.Act == 3){
+        cls +="danger";
+      }
+      if (item.Act == 4){
+        cls +="warning";
+      }
+      <div class="@cls">
+      <strong>[@item.timeStamp] Alert!</strong> @item.Text
+
+      @if (@item.Act == 3){
+        <div class="pull-right">
+            <button type="button" class="btn btn-primary btn-sm" onclick="addTask(-1);">Proceed</button>
+        </div>
+      }
+
+</div>
+}
+
+</div>
+    <script type="text/javascript" src="~/js/action.js"></script>
+
+
+

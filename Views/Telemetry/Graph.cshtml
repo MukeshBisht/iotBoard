@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Real-Time";
+}
+
+
+
+    <div class="kt-breadcrumb">
+      <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="/Home">home</a>
+        <span class="breadcrumb-item active">Telemetry</span>
+      </nav>
+    </div> <!-- kt-breadcrumb -->
+
+    <!-- ##### MAIN PANEL ##### -->
+    <div class="kt-mainpanel">
+      <div class="kt-pagetitle">
+        <h5>Real-Time</h5>
+      </div><!-- kt-pagetitle -->
+
+         <div class="kt-pagebody">
+          <p>humidity and temperature</p>
+          <p>humidity (Green)</p>
+          <p>Temperature (Pink)</p>
+          <canvas id="env" width="1000" height="250"></canvas>
+
+          <p>soil moisture</p>
+          <canvas id="soil" width="1000" height="250"></canvas>
+
+          <p>Sun Light</p>
+          <canvas id="light" width="1000" height="250"></canvas>
+
+          <!-- <p>Sun Light</p>
+          <canvas id="light" width="1000" height="250"></canvas> -->
+
+         </div>
+
+
+    <script type="text/javascript" src="~/js/smoothie.js"></script>
+    <script type="text/javascript" src="~/js/signalr.js"></script>
+    <script type="text/javascript" src="~/js/graph.js"></script>
