@@ -1,4 +1,5 @@
-## Welcome to iotBoard
+## Welcome to iotBoard  
+<img alt="build-status" src="https://github.com/mukeshbisht/iotBoard/workflows/.NET Core/badge.svg" />
 
 You can use this repository for personal use.
 
