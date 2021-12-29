@@ -19,4 +19,4 @@ You can use this repository for personal use.
 
 ### importent
 
-- Will be updated to .net 5 soon
+- Will be updated to .net 6 soon
